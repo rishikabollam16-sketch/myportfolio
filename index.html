@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bollam Rishika | Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+    color:#333;
+}
+
+/* Navigation */
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:#0f172a;
+    padding:18px 0;
+    z-index:1000;
+    box-shadow:0 2px 10px rgba(0,0,0,0.2);
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    gap:40px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:17px;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+/* Hero Section */
+.hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(rgba(15,23,42,0.9),rgba(15,23,42,0.9)),
+    url('https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=1200');
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:15px;
+}
+
+.hero span{
+    color:#38bdf8;
+}
+
+.hero p{
+    font-size:22px;
+    margin-bottom:25px;
+}
+
+.btn{
+    background:#38bdf8;
+    color:white;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#0ea5e9;
+}
+
+/* Sections */
+section{
+    padding:100px 10%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:38px;
+    color:#0f172a;
+    margin-bottom:40px;
+}
+
+/* Cards */
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* Skills */
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.skill{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:20px;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.skill:hover{
+    transform:translateY(-5px);
+    background:#38bdf8;
+}
+
+/* Projects */
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.project{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.project h3{
+    color:#0f172a;
+    margin-bottom:10px;
+}
+
+/* Contact */
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin:15px 0;
+    font-size:18px;
+}
+
+/* Footer */
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Hero -->
+<div class="hero">
+    <h1>BOLLAM <span>RISHIKA</span></h1>
+    <p>Final Year Computer Science Engineering Student</p>
+    <a href="#about" class="btn">Explore Portfolio</a>
+</div>
+
+<!-- About -->
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+
+    <div class="card">
+        <p>
+            I am a Final Year Computer Science Engineering student passionate about
+            Artificial Intelligence, Machine Learning, Data Analytics, Software
+            Development, and Problem Solving. I enjoy building innovative projects
+            and continuously learning new technologies to solve real-world challenges.
+        </p>
+    </div>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+    <h2 class="section-title">Technical Skills</h2>
+
+    <div class="skills">
+        <div class="skill">Python</div>
+        <div class="skill">Java</div>
+        <div class="skill">C Programming</div>
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">SQL</div>
+        <div class="skill">Machine Learning</div>
+        <div class="skill">Data Analytics</div>
+        <div class="skill">DBMS</div>
+        <div class="skill">Computer Networks</div>
+        <div class="skill">Git & GitHub</div>
+    </div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects">
+
+        <div class="project">
+            <h3>Microsoft Stock Price Prediction</h3>
+            <p>
+                Built a machine learning model using historical stock data
+                to forecast future Microsoft stock prices.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>AI Resume Screening System</h3>
+            <p>
+                Developed an AI-based recruitment assistant that analyzes
+                and ranks resumes automatically.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>Portfolio Website</h3>
+            <p>
+                Designed and developed a responsive personal portfolio
+                using HTML, CSS, and JavaScript.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+    <h2 class="section-title">Contact Me</h2>
+
+    <div class="card contact">
+        <p>📧 Email: yourmail@gmail.com</p>
+        <p>📱 Mobile: +91 XXXXX XXXXX</p>
+        <p>💻 GitHub: github.com/yourusername</p>
+        <p>🔗 LinkedIn: linkedin.com/in/yourprofile</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Bollam Rishika | Computer Science Engineering Portfolio
+</footer>
+
+</body>
+</html>
